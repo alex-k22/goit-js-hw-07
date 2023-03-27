@@ -18,11 +18,6 @@ const makeGalleryCard = ({preview, original, description}) =>
 </li>`
 ;
 
-const handleEscapeKey = () => {
-
-    document.removeEventListener('keydown', handleEscapeKey);
-}
-
 const markup = galleryItems.map((element) => makeGalleryCard(element)).join("");
 
 galleryEl.insertAdjacentHTML("afterbegin", markup);
