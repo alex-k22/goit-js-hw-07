@@ -17,13 +17,4 @@ const markup = galleryItems.map((element) => makeGalleryCard(element)).join("");
 
 galleryEl.insertAdjacentHTML("afterbegin", markup);
 
-galleryEl.addEventListener('click', event => {
-    event.preventDefault();
-  
-    if (event.target.nodeName !== 'IMG') {
-      return;
-    }
-      
-    let gallery = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250});
-
-});
+let gallery = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250});

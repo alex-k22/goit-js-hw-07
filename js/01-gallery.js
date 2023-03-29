@@ -35,7 +35,5 @@ galleryEl.addEventListener('click', event => {
     <img src="${largeImageUrl}" width="800" height="600">`)
     instance.show()
 
-    document.addEventListener('keydown', event => {
-        if (event.code === 'Escape') { instance.close()}
-  });
 });
+
